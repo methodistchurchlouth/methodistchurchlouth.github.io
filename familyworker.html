@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>LMC Family Worker</title>
+  <meta name="description" content="Louth Methodist Church" />
+  <meta name="keywords" content="Methodist Church,Louth, Lincolnshire, Family worker, church worker." />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" >
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+  <link rel="shortcut icon" type="image/x-icon" href="pageIcon.ico">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" id="butt" onclick="roomsResponsive()">Rooms &#9660;
+      </button>
+      <div class="dropdown-content" id="myDropdown-content">
+        <a href="churchHall.html">Church Hall</a>
+        <a href="Hall1.html">Hall 1</a>
+        <a href="Hall2.html">Hall 2</a>
+        <a href="Room1.html">Room 1</a>
+        <a href="Lounge.html">Lounge</a>
+        <a href="officeSpace.html">Office Space</a>
+      </div>
+    </div>
+    <a href="Groups.html">Groups</a>
+    <div class="dropdown">
+      <button class="dropbtnActive" id="buttOut" onclick="outreachResponsive()">Outreach &#9660;
+      </button>
+      <div class="outreachdropdown-content" id="myOuteachDropdown-content">
+        <a href="openhouse.html">Open House</a>
+        <a href="#">Family Worker</a>
+        <a href="LHP.html">Lighthouse Drop In</a>
+      </div>
+    </div>
+  </div>
+
+<div class="main">
+  <h1>Church Family Worker</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="churchFront/church_front_4.JPG" alt="Church front.">
+      </div>
+      <div class="item">
+        <img src="outreach/open_house.JPG" alt="Open house space." >
+      </div>
+      <div class="item">
+        <img src="outreach/puppets_1.JPG" alt="Puppets" >
+      </div>
+    </div>
+  </div>
+  <div class="roomDescription">
+    <div class="descirpt">
+      <h4>Claire Plowright</h4>
+      <p>
+        Claire Plowright is our part time Church Family Worker,<br> based at Louth Methodist Church in the East Lincolnshire Methodist Circuit..
+      </p>
+      <p>
+        Her role is to support church events in order to build relationships. For anyone who is a fringe members or occasional visitor to the church,
+        Claire  will be able to help signpost you to relevant activities and groups in order to help give you a feeling of belonging.
+        Claire's main aim is to help everyone go from just attending church to belonging and contributing.
+      </p>
+      <p>
+        Claire is usually around at Sunday's Exalt service, and will soon have a new contact number which we will share here.
+      </p>
+      </p>
+    </div>
+    <div class="roomtable">
+      <img id="FW" src="outreach/claire_plowright.jpg" alt="Claire Plowright.">
+    </div>
+  </div>
+
+</div>
+<!-- <div class="footer">
+</div> -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function roomsResponsive() {
+  var x = document.getElementById("myDropdown-content");
+  var y = document.getElementById("butt");
+  if (x.className === "dropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Rooms &#9650;";
+  } else {
+    x.className = "dropdown-content";
+    y.innerHTML = "Rooms &#9660;";
+  }
+}
+function outreachResponsive() {
+  var x = document.getElementById("myOuteachDropdown-content");
+  var y = document.getElementById("buttOut");
+  if (x.className === "outreachdropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Outreach &#9650;";
+  } else {
+    x.className = "outreachdropdown-content";
+    y.innerHTML = "Outreach &#9660;";
+  }
+}
+</script>
+</body>

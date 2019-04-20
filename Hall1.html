@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>LMC Hall 1</title>
+  <meta name="description" content="Louth Methodist Church, Hall." />
+  <meta name="keywords" content="Hall, Louth Methodist Church, function rooms, louth," />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="pageIcon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="menuResponsive()">&#9776;</a>
+    <a href="index.html" >Home</a>
+    <div class="dropdown" >
+      <button class="dropbtnActive" id="butt" onclick="roomsResponsive()">Rooms &#9660;
+      </button>
+      <div class="dropdown-content" id="myDropdown-content">
+        <a href="churchHall.html">Church Hall</a>
+        <a href="#">Hall 1</a>
+        <a href="Hall2.html">Hall 2</a>
+        <a href="Room1.html">Room 1</a>
+        <a href="Lounge.html">Lounge</a>
+        <a href="officeSpace.html">Office Space</a>
+      </div>
+    </div>
+    <a href="Groups.html">Groups</a>
+    <div class="dropdown">
+      <button class="dropbtn" id="buttOut" onclick="outreachResponsive()">Outreach &#9660;
+      </button>
+      <div class="outreachdropdown-content" id="myOuteachDropdown-content">
+        <a href="openhouse.html">Open House</a>
+        <a href="familyworker.html">Family Worker</a>
+        <a href="LHP.html">Lighthouse Drop In</a>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <h1>Hall 1</h1>
+    <div class="roomImage">
+      <img class="Image" src="hall1/hall1_1.JPG" alt="Hall 1.">
+    </div>
+    <div>
+      <h2>Description</h2>
+      <h4>Occupancy: 80.</h4>
+      <p>
+        Ideal open space for anything from table tennis to keep fit.<br>
+        Tables and chairs are available to move in as required.
+      </p>
+    </div>
+    <div>
+      <h3>Enquiries</h3>
+      <p>
+        For current schedule of prices see the booking form below.
+        In order to book we ask that you first read our <a target="_blank" href="https://drive.google.com/file/d/1iP_vX9WLXS3fVLgnn9V3rwBclE4wzcSS/view?usp=sharing" title="Open our safegaurding policy." target="_blank">safeguarding policy</a>.<br>
+        Please send a completed <a target="_blank" href="https://drive.google.com/file/d/1y1AvEt2fJmJ26S-X4i8BfX6NBLIHjP1k/view?usp=sharing" title="Open our booking." target="_blank">booking form</a> to the below email address.
+        Long term weekly bookings will need to complete a licence agreement which can be requested by email.
+      </p>
+      <h4><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>:- methodistchurchlouth@gmail.com</h4>
+    </div>
+  </div>
+
+
+<!-- <div class="footerRoom">
+</div> -->
+
+<script>
+function menuResponsive() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function roomsResponsive() {
+  var x = document.getElementById("myDropdown-content");
+  var y = document.getElementById("butt");
+  if (x.className === "dropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Rooms &#9650;";
+  } else {
+    x.className = "dropdown-content";
+    y.innerHTML = "Rooms &#9660;";
+  }
+}
+function outreachResponsive() {
+  var x = document.getElementById("myOuteachDropdown-content");
+  var y = document.getElementById("buttOut");
+  if (x.className === "outreachdropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Outreach &#9650;";
+  } else {
+    x.className = "outreachdropdown-content";
+    y.innerHTML = "Outreach &#9660;";
+  }
+}
+</script>
+</body>

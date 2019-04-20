@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Louth Methodist Church (LMC)</title>
+  <meta name="description" content="Louth Methodist Church" />
+  <meta name="keywords" content="Methodist Church in Louth Lincolnshire." />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="pageIcon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="#home" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" id="butt" onclick="roomsResponsive()">Rooms &#9660;
+      </button>
+      <div class="dropdown-content" id="myRoomDropdown-content">
+        <a href="churchHall.html">Church Hall</a>
+        <a href="Hall1.html">Hall 1</a>
+        <a href="Hall2.html">Hall 2</a>
+        <a href="Room1.html">Room 1</a>
+        <a href="Lounge.html">Lounge</a>
+        <a href="officeSpace.html">Office Space</a>
+      </div>
+    </div>
+    <a href="Groups.html">Groups</a>
+    <div class="dropdown">
+      <button class="dropbtn" id="buttOut" onclick="outreachResponsive()">Outreach &#9660;
+      </button>
+      <div class="outreachdropdown-content" id="myOuteachDropdown-content">
+        <a href="openhouse.html">Open House</a>
+        <a href="familyworker.html">Family Worker</a>
+        <a href="LHP.html">Lighthouse Drop In</a>
+      </div>
+    </div>
+  </div>
+
+<div class="main">
+  <h1>Louth Methodist Church</h1>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="churchFront/church_front_4.JPG" alt="Church front.">
+        </div>
+        <div class="item">
+          <img src="sculpture/sculpture_1.JPG" alt="sculpture" >
+        </div>
+      </div>
+    </div>
+  <div>
+    <h2> Welcome to Louth Methodist Church, find us <a target="_blank" href="https://goo.gl/maps/jxrisQ9WJSz">here.</a></h3>
+    <p>
+      An enormous set of buildings which have stood there in various forms since the early 19th century, underwent an extensive refurbishment in 2015 in order to become a true Community Centre providing a host of activities for all ages. The groups are listed on separate pages.
+    </p>
+    <p>Worship is of course at the heart of all we do. The worship area has been modernised to provide a comfortable multi-purpose hall. Come and see for yourself during our church services or Open House on a Wednesday morning.</p>
+  </div>
+  <div>
+    <h3>Worship</h3>
+    <p>
+      <strong>Exalt</strong> for the young and young at heart is a modern form of worship and commences at 9.30am followed by refreshments.
+    </p>
+    <p>The main traditional service is preceded by refreshments and commences at 10.45am. Singing the Faith is used as our Hymn book. As members of Churches Together in Louth we do have joint services on occasions and the newsletter listing all services is always available on this site.</p>
+    <p>The evening service commences at 6pm and is usually held in Hall 2, which is a more suitable environment for the smaller gathering.</p>
+    <p>Wednesday worship is held every first Wednesday of the month in the main church during Open House, starting at noon and lasting approximately 30 minutes.</p>
+    <h4>Read our latest <a href="https://drive.google.com/file/d/1Sc3F-ULj5nvRoYRfwwJR7q_EDjZhAF94/view?usp=sharing" title="Open our news letter." target="_blank">news letter.</a></h4>
+  </div>
+  <div class="contact">
+    <h2>Contact us:</h2>
+    <p class="address">
+      Nichol Hill<br/>
+      Louth<br/>
+      Lincolnshire<br/>
+      LN11 9NQ<br/>
+    </p>
+  </div>
+  <div class="churchStewards">
+    <h3>Church Stewards:</h3>
+    <table>
+      <tr><td>Kath</td> <td>01507 602990</td></tr>
+      <tr><td>Nancy</td> <td>01507 602253</td></tr>
+      <tr><td>Heather</td> <td>01507 608769</td></tr>
+      <tr><td>Colin</td> <td>01507 603622</td></tr>
+      <tr><td>Alison</td> <td>01507 600049</td></tr>
+      <tr><td>Ros</td> <td>01507 601320</td></tr>
+      <tr><td>Richard</td> <td>01507 606457</td></tr>
+      <tr><td>Ian</td> <td>01507 603413</td></tr>
+    </table>
+    <p>To arrange to see the Church for bookings contact us via:</p>
+    <h4><i class="fa fa-phone" aria-hidden="true"></i>:- 07773763402</h3>
+    <h4><i class="fa fa-envelope" aria-hidden="true"></i>:- methodistchurchlouth@gmail.com</h3>
+  </div>
+<!-- </div>
+<div class="footer">
+</div> -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function roomsResponsive() {
+  var x = document.getElementById("myRoomDropdown-content");
+  var y = document.getElementById("butt");
+  if (x.className === "dropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Rooms &#9650;";
+  } else {
+    x.className = "dropdown-content";
+    y.innerHTML = "Rooms &#9660;";
+  }
+}
+function outreachResponsive() {
+  var x = document.getElementById("myOuteachDropdown-content");
+  var y = document.getElementById("buttOut");
+  if (x.className === "outreachdropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Outreach &#9650;";
+  } else {
+    x.className = "outreachdropdown-content";
+    y.innerHTML = "Outreach &#9660;";
+  }
+}
+</script>
+</body>

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>LMC Lighthouse Drop-in Centre.</title>
+  <meta name="description" content="Louth Methodist Church Lighthouse Project" />
+  <meta name="keywords" content="Methodist Church,Louth, Lincolnshire, Lighthouse project, Lighthouse drop-in centre, Lighthouse," />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" >
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+  <link rel="shortcut icon" type="image/x-icon" href="pageIcon.ico">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" id="butt" onclick="roomsResponsive()">Rooms &#9660;
+      </button>
+      <div class="dropdown-content" id="myDropdown-content">
+        <a href="churchHall.html">Church Hall</a>
+        <a href="Hall1.html">Hall 1</a>
+        <a href="Hall2.html">Hall 2</a>
+        <a href="Room1.html">Room 1</a>
+        <a href="Lounge.html">Lounge</a>
+        <a href="officeSpace.html">Office Space</a>
+      </div>
+    </div>
+    <a href="Groups.html">Groups</a>
+    <div class="dropdown">
+      <button class="dropbtnActive" id="buttOut" onclick="outreachResponsive()">Outreach &#9660;
+      </button>
+      <div class="outreachdropdown-content" id="myOuteachDropdown-content">
+        <a href="openhouse.html">Open House</a>
+        <a href="familyworker.html">Family Worker</a>
+        <a href="LHP.html">Lighthouse Drop In</a>
+      </div>
+    </div>
+  </div>
+
+<div class="main">
+  <h1>Lighthouse Drop in Centre</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="outreach/nichols.JPG" alt="Nichols front.">
+      </div>
+      <div class="item">
+        <img src="outreach/nichols_1.JPG" alt="Nichols space." >
+      </div>
+      <div class="item">
+        <img src="outreach/nichols_2.JPG" alt="Nichols space." >
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>
+      The Lighthouse drop in centre is open every Friday morning from 10am - 1pm at Nichols, Nichol Hill Louth.
+    </p>
+      <p>
+        Nichols Youth project finished last summer and the Methodist Church building is now going to be used for the good of our local community in another way. The drop in centre is eternally grateful to ECHO for the amazing help and support they have given us.
+      </p>
+      <p>
+        We now have a stock of surplus food for those in need as well as a space to relax in a warm friendly atmosphere.
+      </p>
+      <p>
+        Refreshments are free although you are of course welcome to give us a donation if you are able. Every week there will be a range of items "free to a good home" that have been donated, including books, toys and other items. We are able to signpost people to a range of services and provide an ongoing pastoral service to anyone who wants to use the facility. We are looking at a trial period to gauge the local need and welcome support from volunteers or donations.
+      </p>
+      <p>
+        For further information follow us on <a target="_blank" href="https://www.facebook.com/Lighthouse-Louth-561155911043807/">facebook</a> or contact Mark Harrison on 01507 327373 or email helendee98@gmail.com
+      </p>
+    </p>
+  </div>
+
+</div>
+<!-- <div class="footer">
+</div> -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function roomsResponsive() {
+  var x = document.getElementById("myDropdown-content");
+  var y = document.getElementById("butt");
+  if (x.className === "dropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Rooms &#9650;";
+  } else {
+    x.className = "dropdown-content";
+    y.innerHTML = "Rooms &#9660;";
+  }
+}
+function outreachResponsive() {
+  var x = document.getElementById("myOuteachDropdown-content");
+  var y = document.getElementById("buttOut");
+  if (x.className === "outreachdropdown-content") {
+    x.className += " responsive";
+    y.innerHTML = "Outreach &#9650;";
+  } else {
+    x.className = "outreachdropdown-content";
+    y.innerHTML = "Outreach &#9660;";
+  }
+}
+</script>
+</body>
