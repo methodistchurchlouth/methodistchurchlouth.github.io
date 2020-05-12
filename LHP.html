@@ -7,62 +7,70 @@
   <meta name="keywords" content="Methodist Church,Louth, Lincolnshire, Lighthouse project, Lighthouse drop-in centre, Lighthouse," />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" >
-  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
-  <link rel="shortcut icon" type="image/x-icon" href="pageIcon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="topnav" id="myTopnav">
-    <div class="logo">
-      <img src="logo.png">
+  <nav class="navbar navbar-light navbar-expand-sm navbar-custom">
+    <a href="#" class="navbar-brand">
+      <img src="logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCustom">
+        <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rooms</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="churchHall.html">Church Hall</a>
+                  <a class="dropdown-item" href="Hall1.html">Hall 1</a>
+                  <a class="dropdown-item" href="Hall2.html">Hall 2</a>
+                  <a class="dropdown-item" href="Room1.html">Room 1</a>
+                  <a class="dropdown-item" href="Lounge.html">Lounge</a>
+                  <a class="dropdown-item" href="officeSpace.html">Office Space</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Groups.html">Groups</a>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outreach</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="openhouse.html">Open House</a>
+                  <a class="dropdown-item" href="familyworker.html">Family Worker</a>
+                  <a class="dropdown-item" href="LHP.html">Lighthouse Drop In</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+            </li>
+        </ul>
     </div>
-    <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn" id="butt" onclick="roomsResponsive()">Rooms &#9660;
-      </button>
-      <div class="dropdown-content" id="myDropdown-content">
-        <a href="churchHall.html">Church Hall</a>
-        <a href="Hall1.html">Hall 1</a>
-        <a href="Hall2.html">Hall 2</a>
-        <a href="Room1.html">Room 1</a>
-        <a href="Lounge.html">Lounge</a>
-        <a href="officeSpace.html">Office Space</a>
-      </div>
-    </div>
-    <a href="Groups.html">Groups</a>
-    <div class="dropdown">
-      <button class="dropbtnActive" id="buttOut" onclick="outreachResponsive()">Outreach &#9660;
-      </button>
-      <div class="outreachdropdown-content" id="myOuteachDropdown-content">
-        <a href="openhouse.html">Open House</a>
-        <a href="familyworker.html">Family Worker</a>
-        <a href="LHP.html">Lighthouse Drop In</a>
-      </div>
-    </div>
-  </div>
+</nav>
 
 <div class="main">
   <h1>Lighthouse Drop in Centre</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="outreach/nichols.JPG" alt="Nichols front.">
+      <div class="carousel-item active">
+        <img class="d-block" src="outreach/nichols.JPG" alt="Nichols front.">
       </div>
-      <div class="item">
-        <img src="outreach/lhp.JPG" alt="Some people at the lighthouse dropin centre." >
+      <div class="carousel-item">
+        <img class="d-block" src="outreach/lhp.JPG" alt="Some people at the lighthouse dropin centre." >
       </div>
-      <div class="item">
-        <img src="outreach/nichols_2.JPG" alt="Nichols space." >
+      <div class="carousel-item">
+        <img class="d-block" src="outreach/nichols_2.JPG" alt="Nichols space." >
       </div>
-      <div class="item">
-        <img src="outreach/lhp_winter_cloths.JPG" alt="Nichols space." >
+      <div class="carousel-item">
+        <img class="d-block" src="outreach/lhp_winter_cloths.JPG" alt="Nichols space." >
       </div>
     </div>
   </div>
@@ -86,39 +94,4 @@
   </div>
 
 </div>
-<!-- <div class="footer">
-</div> -->
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-function roomsResponsive() {
-  var x = document.getElementById("myDropdown-content");
-  var y = document.getElementById("butt");
-  if (x.className === "dropdown-content") {
-    x.className += " responsive";
-    y.innerHTML = "Rooms &#9650;";
-  } else {
-    x.className = "dropdown-content";
-    y.innerHTML = "Rooms &#9660;";
-  }
-}
-function outreachResponsive() {
-  var x = document.getElementById("myOuteachDropdown-content");
-  var y = document.getElementById("buttOut");
-  if (x.className === "outreachdropdown-content") {
-    x.className += " responsive";
-    y.innerHTML = "Outreach &#9650;";
-  } else {
-    x.className = "outreachdropdown-content";
-    y.innerHTML = "Outreach &#9660;";
-  }
-}
-</script>
 </body>
