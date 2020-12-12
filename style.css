@@ -112,6 +112,7 @@ h1, h2, h3, h4 {
 }
 .navbar-custom .dropdown-item {
     color: #990134;
+    padding: 10px;
 }
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
